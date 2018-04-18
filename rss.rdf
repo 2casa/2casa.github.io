@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Money and Code (2casa's memorandum)</title><link>http://localhost:8888/</link><description></description><lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0900</lastBuildDate><item><title>Hello, world. Read me first.</title><link>http://localhost:8888/sample.html</link><description>&lt;div class="header_target" id="h__sample_2emd_1"&gt;&lt;/div&gt;&lt;h1&gt;はじめに&lt;/h1&gt;
-&lt;p&gt;初めまして。2casaです。&lt;/p&gt;
+&lt;p&gt;初めまして。2casaです。&lt;/p&gt;
 &lt;p&gt;このブログは金融やお金、それらを支える技術について調べた内容をまとめた自分用の備忘録です。&lt;/p&gt;
 &lt;p&gt;金融とは直接縁がなさそうな技術をテーマにする場合は、無理やりにでも金融ネタとこじつけていく所存です。&lt;/p&gt;
-&lt;p&gt;金融とお金がテーマですが、いわゆる「お金になるハナシ」は多分出てきません。&lt;/p&gt;
-&lt;div class="header_target" id="h__sample_2emd_2"&gt;&lt;/div&gt;&lt;h2&gt;免責事項&lt;/h2&gt;
+&lt;p&gt;金融とお金がテーマですが、いわゆる「お金になるハナシ」は多分出てきません。&lt;/p&gt;
+&lt;div class="header_target" id="h__sample_2emd_2"&gt;&lt;/div&gt;&lt;h2&gt;免責事項&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;本ブログの記事は全て個人の見解であり、所属組織とは一切関係ありません。&lt;/li&gt;
-&lt;li&gt;本ブログに記載された記事を参考にして被ったいかなる損害についても、責任を負うものではありません。&lt;/li&gt;
+&lt;li&gt;本ブログに記載された記事を参考にして被ったいかなる損害についても、責任を負うものではありません。&lt;/li&gt;
 &lt;/ul&gt;</description><pubDate>Tue, 17 Apr 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:localhost,2018-04-17:/sample.html</guid></item><item><title>ハンズオン参加記録</title><link>http://localhost:8888/miyadaiku-hands-on.html</link><description>&lt;div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_1"&gt;&lt;/div&gt;&lt;h1&gt;miyadaiku hands-on 参加して来た&lt;/h1&gt;
-&lt;p&gt;2018.04.10に行われた「くろのて勉強会」の"Miyadaikuでブログを作ろう！"に参加してきました。御察しの通り、このブログはMiyadaiku
-で作成しています。&lt;/p&gt;
+&lt;p&gt;2018.04.10に行われた「くろのて勉強会」の"Miyadaikuでブログを作ろう！"に参加してきました。御察しの通り、このブログはMiyadaikuで作成しています。&lt;/p&gt;
 &lt;div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_2"&gt;&lt;/div&gt;&lt;h2&gt;参加目的&lt;/h2&gt;
 &lt;p&gt;LTネタも集まって来たので、ブログで公開できるようにしたい。せっかくなので、pythonでブログを作れる物を探していたら見つけた。&lt;/p&gt;
-&lt;div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_3"&gt;&lt;/div&gt;&lt;h2&gt;以下略&lt;/h2&gt;
-&lt;p&gt;この記事はダミーです。後で消しますので、偶然このページを見つけた人は忘れてください。&lt;/p&gt;</description><pubDate>Tue, 10 Apr 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:localhost,2018-04-10:/miyadaiku-hands-on.html</guid></item></channel></rss>
+&lt;div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_3"&gt;&lt;/div&gt;&lt;h2&gt;以下略&lt;/h2&gt;
+&lt;p&gt;この記事はダミーです。後で消しますので、偶然このページを見つけた人は忘れてください。&lt;/p&gt;</description><pubDate>Tue, 10 Apr 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:localhost,2018-04-10:/miyadaiku-hands-on.html</guid></item></channel></rss>
