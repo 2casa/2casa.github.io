@@ -9,7 +9,7 @@
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jupyter NotebookをMiyadaikuで表示させる - Money and Code</title>
+    <title>index_category - Money and Code</title>
   
   <link rel="stylesheet" href="static/css/style.css">
 
@@ -11791,111 +11791,44 @@ div#notebook {
   <div class="container-inner">
     <div class="container-body">
       
-  <div class="article-metadata">
-    <span class="article-date"> 2018-05-26 </span>
-    <span> サイト更新 </span>
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-12-03 </span>
+    <span> デリバティブ </span>
     <span> miyadaiku,python,jupyter </span>
   </div>
-  <h1 class="article-title">
-    Jupyter NotebookをMiyadaikuで表示させる
-  </h1>
-
-  <div class="article-body">
-    <div>
+      <h2 class="article-title"><a href="個別銘柄のSPANパラメータを取得する。.html">個別銘柄のSPANパラメータを取得する</a></h2>
+      <div class="article-body"><div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Miyadaikuを使いたいと思った理由の一つに、"Jupyter Notebook"で作成したノートブック(.ipynb)から直接HTMLファイルを生成できるという点である。このページはその一例である。</p>
-<p>pythonコードは以下のように表示できる。</p>
+<div class="header_target" id="h___500b_5225_9298_67c4_306eSPAN_30cf_309a_30e9_30e1_30fc_30bf_3092_53d6_5f97_3059_308b_3002_2eipynb_1"></div><h1 id="個別銘柄のSPANパラメータを取得する">個別銘柄のSPANパラメータを取得する<a class="anchor-link" href="#個別銘柄のSPANパラメータを取得する">¶</a></h1><p>JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANパラメータファイルの仕様はJPXのサイトで<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html">公表</a>されている。</p>
+<p>そこで、SPANパラメータファイルの仕様を参考に、実際に<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data/parameter.html">公開</a>しているファイルを読み込み、個別銘柄のSPANパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"hello, world!"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello, world!
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>また、数式もTeXによって綺麗に表示できるというのも素晴らしい。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$$\sum_{k=1}^{n} k =\frac{n(n+1)}{2}$$</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>そのほかマークダウン記法として、箇条書きやテーブルも表現できる。</p>
-<ul>
-<li>箇条書き<ul>
-<li>インデント落とす<ul>
-<li>インデント落とす</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="header_target" id="h__Miyadaiku_2djupyter_2dsample_2eipynb_1"></div><h3 id="テーブル">テーブル<a class="anchor-link" href="#テーブル">¶</a></h3><table>
-<thead><tr>
-<th style="text-align:center">市場略称</th>
-<th>取引所</th>
-<th style="text-align:left">取り扱い商品</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">TSE</td>
-<td>東京証券取引所</td>
-<td style="text-align:left">株式・ETF</td>
-</tr>
-<tr>
-<td style="text-align:center">OSE</td>
-<td>大阪取引所</td>
-<td style="text-align:left">先物・オプション・国債</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>テーブルについては、もう少し表現力があると嬉しいのだが、とにかくもまぁ、jupyterで簡単に書くことができるのである。</p>
-</div>
-</div>
-</div>
-</div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># span_pa2file モジュールをインポート</span></pre></div></div></div></div></div></div></div>
+    
   </div>
+
+  <div class="index-pagination">
+    
+      <span class="index-navi disabled-link">&larr;</span>
+    
+    
+    
+      <span class="index-navi disabled-link">&rarr;</span>
+    
+  </div>
+
 
     </div>
     <aside class="container-right">

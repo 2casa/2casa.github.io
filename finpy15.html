@@ -9,7 +9,7 @@
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jupyter NotebookをMiyadaikuで表示させる - Money and Code</title>
+    <title>finpyもくもく会#15 - Money and Code</title>
   
   <link rel="stylesheet" href="static/css/style.css">
 
@@ -11793,108 +11793,77 @@ div#notebook {
       
   <div class="article-metadata">
     <span class="article-date"> 2018-05-26 </span>
-    <span> サイト更新 </span>
-    <span> miyadaiku,python,jupyter </span>
+    <span> イベント参加レポート </span>
+    <span> python </span>
   </div>
   <h1 class="article-title">
-    Jupyter NotebookをMiyadaikuで表示させる
+    finpyもくもく会#15
   </h1>
 
   <div class="article-body">
-    <div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Miyadaikuを使いたいと思った理由の一つに、"Jupyter Notebook"で作成したノートブック(.ipynb)から直接HTMLファイルを生成できるという点である。このページはその一例である。</p>
-<p>pythonコードは以下のように表示できる。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"hello, world!"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello, world!
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>また、数式もTeXによって綺麗に表示できるというのも素晴らしい。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$$\sum_{k=1}^{n} k =\frac{n(n+1)}{2}$$</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>そのほかマークダウン記法として、箇条書きやテーブルも表現できる。</p>
+    <div class="header_target" id="h__finpy15_2emd_1"></div><h1>自己紹介</h1>
 <ul>
-<li>箇条書き<ul>
-<li>インデント落とす<ul>
-<li>インデント落とす</li>
+<li>connpass : 2casa (つかさ)  </li>
+<li>本業：証券会社向けディーリングシステムの開発</li>
+<li>Arrowhead / J-GATE と直接接続して取引を行うシステムを作ってます。</li>
+<li>PTS / DarkPool を利用した相場操縦が最近気になってます（仕事半分、趣味半分）</li>
+</ul>
+<div class="header_target" id="h__finpy15_2emd_2"></div><h1>本日やったこと</h1>
+<ul>
+<li>miyadaiku</li>
+<li>IBの口座設定</li>
+<li>本を読む</li>
+</ul>
+<div class="header_target" id="h__finpy15_2emd_3"></div><h1>1.miyadaikuいじる</h1>
+<div class="header_target" id="h__finpy15_2emd_4"></div><h2>miyadaiku : pythonで作成された静的サイトジェネレータ。</h2>
+<ul>
+<li>markdown (.md)</li>
+<li>reStracturedText(.rst)</li>
+<li>Jupyter notebook (.ipynb)</li>
+</ul>
+<p>などで作成したコンテンツを、指定したテンプレートに従ってHTMLに整形して出力してくれる。コンテンツさえ書けば簡単にブログの体裁を整えられる。</p>
+<div class="header_target" id="h__finpy15_2emd_5"></div><h2>選んだ理由...</h2>
+<p>blog始めようかなと思っていたタイミングで、miyadaikuの勉強会を見つけた。勉強会に、中の人が参加していた。drillerさんも参加してた。</p>
+<ul>
+<li>今日やった内容</li>
+<li>
+<p>jupyter notebookの記事がうまくHTMLに変換されない原因究明。</p>
+<ul>
+<li>metadataに記録したタイトルやタグがHTML変換時に反映されない。</li>
+</ul>
+</li>
+<li>
+<p>成果：<a href="https://2casa.github.io/index.html">githubpages</a></p>
+</li>
+<li>うまく行かなかった原因：jupyter notebook 内のJSONエディタで変更した内容が、ipynbに保存されてなかった。<ul>
+<li>miyadaikuの問題じゃなくて、jupyterの問題だった。</li>
+<li>ipynbファイルをテキストエディタで直接編集したら解決。 </li>
 </ul>
 </li>
 </ul>
-</li>
+<div class="header_target" id="h__finpy15_2emd_6"></div><h1>2.IBの口座設定</h1>
+<div class="header_target" id="h__finpy15_2emd_7"></div><h2>今日の課題</h2>
+<ul>
+<li>米国IBの口座で、Market Dataを購入するための手続きを完了させる。</li>
+<li>データ購入申し込み時の "Non-Professional Questionnaire"に回答してもエラーとなってしまっている問題に決着をつけたい。</li>
+<li>メールで問い合わせしたが、結局解決せず。</li>
+<li>米国株投資よりも英語の勉強が捗る結果に。</li>
 </ul>
-<div class="header_target" id="h__Miyadaiku_2djupyter_2dsample_2eipynb_1"></div><h3 id="テーブル">テーブル<a class="anchor-link" href="#テーブル">¶</a></h3><table>
-<thead><tr>
-<th style="text-align:center">市場略称</th>
-<th>取引所</th>
-<th style="text-align:left">取り扱い商品</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">TSE</td>
-<td>東京証券取引所</td>
-<td style="text-align:left">株式・ETF</td>
-</tr>
-<tr>
-<td style="text-align:center">OSE</td>
-<td>大阪取引所</td>
-<td style="text-align:left">先物・オプション・国債</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>テーブルについては、もう少し表現力があると嬉しいのだが、とにかくもまぁ、jupyterで簡単に書くことができるのである。</p>
-</div>
-</div>
-</div>
-</div>
+<div class="header_target" id="h__finpy15_2emd_8"></div><h1>3.本読む</h1>
+<ul>
+<li>アナリストのための財務諸表分析とバリュエーション (S.H.ペンマン)</li>
+<li>米国株投資始めるし、米国を対象とした本でファンダメンタル分析を勉強しようかと...。</li>
+<li>miyadaikuに思いがけず時間がかかってしまったのであまり読めなかった。</li>
+</ul>
+<div class="header_target" id="h__finpy15_2emd_9"></div><h2>今日知ったこと</h2>
+<ul>
+<li><a href="https://www.sec.gov/edgar/searchedgar/companysearch.html">EDGARデータベース</a></li>
+<li>日本のTDNet / EDINet に相当？</li>
+<li>10-K : 年次報告書</li>
+<li>10-Q : 四半期報告書</li>
+<li>XBRLも落とせるみたいなので、「有報キャッチャー」的なものが作れる？</li>
+</ul>
+<p>まぁ、Quantopianとかでデータ用意してくれてればそっち使ったほうが早い。</p>
   </div>
 
     </div>
