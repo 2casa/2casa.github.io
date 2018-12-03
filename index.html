@@ -11797,7 +11797,7 @@ div#notebook {
       <div class="article-metadata">
     <span class="article-date"> 2018-12-03 </span>
     <span> デリバティブ </span>
-    <span> miyadaiku,python,jupyter </span>
+    <span> SPAN,python,jupyter </span>
   </div>
       <h2 class="article-title"><a href="getting-spanparams-from-pa2.html">個別銘柄のSPANパラメータを取得する</a></h2>
       <div class="article-body"><div>
@@ -11807,15 +11807,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="header_target" id="h__getting_2dspanparams_2dfrom_2dpa2_2eipynb_1"></div><h1 id="個別銘柄のSPANパラメータを取得する">個別銘柄のSPANパラメータを取得する<a class="anchor-link" href="#個別銘柄のSPANパラメータを取得する">¶</a></h1><p>JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANパラメータファイルの仕様はJPXのサイトで<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html">公表</a>されている。</p>
 <p>そこで、SPANパラメータファイルの仕様を参考に、実際に<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data/parameter.html">公開</a>しているファイルを読み込み、個別銘柄のSPANパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [1]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># span_pa2file モジュールをインポート</span></pre></div></div></div></div></div></div></div>
+<p>なお、composite_deltaとimplied_volatilityについては、セットされた値に対し、 $10^{-4}$、$10^{-6}$を乗じている。</p></div></div></div></div></div>
     
       <div class="article-metadata">
     <span class="article-date"> 2018-05-26 </span>
@@ -11976,6 +11968,12 @@ div#notebook {
       Tags:
         
       <ul>
+        
+          <li>
+            <a href="index_tag_tags_SPAN.html">
+              SPAN
+            </a>
+          </li>
         
           <li>
             <a href="index_tag_tags_jupyter.html">
