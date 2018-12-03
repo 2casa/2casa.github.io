@@ -11806,8 +11806,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="header_target" id="h__getting_2dspanparams_2dfrom_2dpa2_2eipynb_1"></div><h1 id="個別銘柄のSPANパラメータを取得する">個別銘柄のSPANパラメータを取得する<a class="anchor-link" href="#個別銘柄のSPANパラメータを取得する">¶</a></h1><p>JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANパラメータファイルの仕様はJPXのサイトで<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html">公表</a>されている。</p>
-<p>そこで、SPANパラメータファイルの仕様を参考に、実際に<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data.html">公開</a>しているファイルを読み込み、個別銘柄のSPANパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。</p>
+<div class="header_target" id="h__getting_2dspanparams_2dfrom_2dpa2_2eipynb_1"></div><h1 id="個別銘柄のSPANリスクパラメータを取得する">個別銘柄のSPANリスクパラメータを取得する<a class="anchor-link" href="#個別銘柄のSPANリスクパラメータを取得する">¶</a></h1><ul>
+<li>リンクパスを修正(2018/12/03)</li>
+</ul>
+<p>JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANリスクパラメータファイルの仕様はJPXのサイトで<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html#001">公表</a>されている。</p>
+<p>そこで、SPANリスクパラメータファイルの仕様を参考に、実際に<a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data.html">公開</a>しているファイルを読み込み、個別銘柄のSPANリスクパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。</p>
 <p>なお、composite_deltaとimplied_volatilityについては、セットされた値に対し、 $10^{-4}$、$10^{-6}$を乗じている。</p>
 </div>
 </div>
@@ -11911,7 +11914,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>公開されているファイル仕様書に基づいてデータを抜き出しているだけなので、著作権的な問題は恐らくないと思うが、まだまだbugも多いと思われるのでとりあえずコードはPrivateとしておく。</p>
+<p>公開されているファイル仕様書に基づいてデータを抜き出しているだけだが、データ著作権やライセンスの問題、バグの存在があるのでとりあえずコードはPrivateとしておく。</p>
 </div>
 </div>
 </div>

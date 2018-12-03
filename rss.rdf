@@ -4,9 +4,11 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;div class="header_target" id="h__getting_2dspanparams_2dfrom_2dpa2_2eipynb_1"&gt;&lt;/div&gt;&lt;h1 id="個別銘柄のSPANパラメータを取得する"&gt;個別銘柄のSPANパラメータを取得する&lt;a class="anchor-link" href="#個別銘柄のSPANパラメータを取得する"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANパラメータファイルの仕様はJPXのサイトで&lt;a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html"&gt;公表&lt;/a&gt;されている。&lt;/p&gt;
-&lt;p&gt;そこで、SPANパラメータファイルの仕様を参考に、実際に&lt;a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data/parameter.html"&gt;公開&lt;/a&gt;しているファイルを読み込み、個別銘柄のSPANパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。&lt;/p&gt;
-&lt;p&gt;なお、composite_deltaとimplied_volatilityについては、セットされた値に対し、 $10^{-4}$、$10^{-6}$を乗じている。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><pubDate>Mon, 03 Dec 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:localhost,2018-12-03:/getting-spanparams-from-pa2.html</guid></item><item><title>finpyもくもく会#15</title><link>http://localhost:8888/finpy15.html</link><description>&lt;div class="header_target" id="h__finpy15_2emd_1"&gt;&lt;/div&gt;&lt;h1&gt;自己紹介&lt;/h1&gt;
+&lt;div class="header_target" id="h__getting_2dspanparams_2dfrom_2dpa2_2eipynb_1"&gt;&lt;/div&gt;&lt;h1 id="個別銘柄のSPANリスクパラメータを取得する"&gt;個別銘柄のSPANリスクパラメータを取得する&lt;a class="anchor-link" href="#個別銘柄のSPANリスクパラメータを取得する"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;リンクパスを修正(2018/12/03)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;JPXにおける派生商品取引にかかる証拠金所要額は、シカゴ・マーカンタイル取引所（CME）が開発しライセンス保有しているSPAN(R)モデルに基づいて算出される。SPANリスクパラメータファイルの仕様はJPXのサイトで&lt;a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_file.html#001"&gt;公表&lt;/a&gt;されている。&lt;/p&gt;
+&lt;p&gt;そこで、SPANリスクパラメータファイルの仕様を参考に、実際に&lt;a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/span_data.html"&gt;公開&lt;/a&gt;しているファイルを読み込み、個別銘柄のSPANリスクパラメータを取り出すサンプルプログラム（span_pa2file）を作成してみた。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><pubDate>Mon, 03 Dec 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:localhost,2018-12-03:/getting-spanparams-from-pa2.html</guid></item><item><title>finpyもくもく会#15</title><link>http://localhost:8888/finpy15.html</link><description>&lt;div class="header_target" id="h__finpy15_2emd_1"&gt;&lt;/div&gt;&lt;h1&gt;自己紹介&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;connpass : 2casa (つかさ)  &lt;/li&gt;
 &lt;li&gt;本業：証券会社向けディーリングシステムの開発&lt;/li&gt;
