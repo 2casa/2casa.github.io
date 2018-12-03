@@ -9,7 +9,7 @@
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index_tag - Money and Code</title>
+    <title>個別銘柄のSPANパラメータを取得する - Money and Code</title>
   
   <link rel="stylesheet" href="static/css/style.css">
 
@@ -11791,16 +11791,17 @@ div#notebook {
   <div class="container-inner">
     <div class="container-body">
       
-
-  <div class="articles">
-    
-      <div class="article-metadata">
+  <div class="article-metadata">
     <span class="article-date"> 2018-12-03 </span>
     <span> デリバティブ </span>
     <span> miyadaiku,python,jupyter </span>
   </div>
-      <h2 class="article-title"><a href="getting-spanparams-from-pa2.html">個別銘柄のSPANパラメータを取得する</a></h2>
-      <div class="article-body"><div>
+  <h1 class="article-title">
+    個別銘柄のSPANパラメータを取得する
+  </h1>
+
+  <div class="article-body">
+    <div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11815,30 +11816,18 @@ div#notebook {
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># span_pa2file モジュールをインポート</span></pre></div></div></div></div></div></div></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2018-05-26 </span>
-    <span> サイト更新 </span>
-    <span> miyadaiku,python,jupyter </span>
-  </div>
-      <h2 class="article-title"><a href="Miyadaiku-jupyter-sample.html">Jupyter NotebookをMiyadaikuで表示させる</a></h2>
-      <div class="article-body"><div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Miyadaikuを使いたいと思った理由の一つに、"Jupyter Notebook"で作成したノートブック(.ipynb)から直接HTMLファイルを生成できるという点である。このページはその一例である。</p>
-<p>pythonコードは以下のように表示できる。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"hello, world!"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># span_pa2file モジュールをインポート</span>
+<span class="kn">import</span> <span class="nn">span_pa2file</span> <span class="k">as</span> <span class="nn">span</span>
+
+<span class="c1"># spanファイルを指定</span>
+<span class="n">span_parameter_file</span> <span class="o">=</span> <span class="s2">"Jsc20181128_1700.pa2"</span>
+
+<span class="c1"># リスクアレイを作成</span>
+<span class="n">dic</span> <span class="o">=</span> <span class="n">span</span><span class="o">.</span><span class="n">get_riskarray</span><span class="p">(</span><span class="n">span_parameter_file</span><span class="p">)</span>
+
+<span class="c1"># 銘柄コードを指定すると、当該銘柄のリスクアレイを返す。</span>
+<span class="c1"># 例えば201903限、権利行使価格18,000円のNK225コールオプションのリスクアレイを取り出す場合...</span>
+<span class="n">dic</span><span class="p">[</span><span class="s2">"CAL_NK225_201903_1800000"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -11846,62 +11835,79 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello, world!
-</pre>
+<div class="prompt output_prompt">Out[1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>{'array_value1': -1052,
+ 'array_value2': 1021,
+ 'array_value3': -3317,
+ 'array_value4': -1351,
+ 'array_value5': 1205,
+ 'array_value6': 3390,
+ 'array_value7': -5593,
+ 'array_value8': -3725,
+ 'array_value9': 3453,
+ 'array_value10': 5757,
+ 'array_value11': -7874,
+ 'array_value12': -6100,
+ 'array_value13': 5660,
+ 'array_value14': 8109,
+ 'array_value15': -6257,
+ 'array_value16': 6121,
+ 'composite_delta': 9259,
+ 'implied_volatility': 0.284264,
+ 'settlement_price': 4260}</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>また、数式もTeXによって綺麗に表示できるというのも素晴らしい。</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$$\sum_{k=1}^{n} k =\frac{n(n+1)}{2}$$</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>そのほかマークダウン記法として、箇条書きやテーブルも表現できる。</p></div></div></div></div></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2018-04-10 </span>
-    <span> イベント参加レポート </span>
-    <span> python,miyadaiku </span>
-  </div>
-      <h2 class="article-title"><a href="miyadaiku-hands-on.html">ハンズオン参加記録</a></h2>
-      <div class="article-body"><div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_1"></div><h1>miyadaiku hands-on 参加して来た</h1>
-<p>2018.04.10に行われた「くろのて勉強会」の"Miyadaikuでブログを作ろう！"に参加してきました。御察しの通り、このブログはMiyadaikuで作成しています。</p>
-<div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_2"></div><h2>参加目的</h2>
-<p>LTネタも集まって来たので、ブログで公開できるようにしたい。せっかくなので、pythonでブログを作れる物を探していたら見つけた。</p>
-<div class="header_target" id="h__miyadaiku_2dhands_2don_2emd_3"></div><h2>以下略</h2>
-<p>この記事はダミーです。後で消しますので、偶然このページを見つけた人は忘れてください。</p></div>
-    
-  </div>
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 銘柄命名規則は以下の通り。</span>
+<span class="c1"># FUT_NK225_yyyymm : 先物の場合</span>
+<span class="c1"># CAL_NK225_yyyymm_XXXXX00 : コールオプションの場合(下2桁は常にゼロ)</span>
+<span class="c1"># PUT_NK225_yyyymm_XXXXX00: プットオプションの場合（下２桁は常にゼロ）</span>
 
-  <div class="index-pagination">
-    
-      <span class="index-navi disabled-link">&larr;</span>
-    
-    
-    
-      <span class="index-navi disabled-link">&rarr;</span>
-    
+<span class="c1"># 先物の場合</span>
+<span class="n">dic</span><span class="p">[</span><span class="s2">"FUT_NK225_201903"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>{'array_value1': 0,
+ 'array_value2': 0,
+ 'array_value3': -240,
+ 'array_value4': -240,
+ 'array_value5': 240,
+ 'array_value6': 240,
+ 'array_value7': -480,
+ 'array_value8': -480,
+ 'array_value9': 480,
+ 'array_value10': 480,
+ 'array_value11': -720,
+ 'array_value12': -720,
+ 'array_value13': 720,
+ 'array_value14': 720,
+ 'array_value15': -648,
+ 'array_value16': 648,
+ 'composite_delta': 10000,
+ 'implied_volatility': 0,
+ 'settlement_price': 22160}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
   </div>
-
 
     </div>
     <aside class="container-right">
